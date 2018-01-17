@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
 
                 sifirla()
 
-
+ 
             }else{
                 FancyToast.makeText(this,"Ders Adını Girin",
                         FancyToast.LENGTH_LONG,FancyToast.ERROR,true).show()
