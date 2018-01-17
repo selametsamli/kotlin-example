@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
 import com.selametsamli.ortalamahesapla.R.array.tumNotlar
+import com.shashank.sony.fancytoastlib.FancyToast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.yeni_ders_layout.*
@@ -72,7 +73,9 @@ class MainActivity : AppCompatActivity() {
 
 
             }else{
-                Toast.makeText(this,"Ders Adını Giriniz!!!",Toast.LENGTH_LONG).show()
+                FancyToast.makeText(this,"Ders Adını Girin",
+                        FancyToast.LENGTH_LONG,FancyToast.ERROR,true).show()
+
             }
         }
 
@@ -100,8 +103,9 @@ class MainActivity : AppCompatActivity() {
             toplamKredi+=oAnkiDers.dersKredi.toDouble()
 
         }
+        FancyToast.makeText(this,"Ortalama: "+(toplamNot/toplamKredi)
+                ,FancyToast.LENGTH_LONG,FancyToast.SUCCESS,true).show()
 
-        Toast.makeText(this,"ORTALAMA: "+(toplamNot/toplamKredi),Toast.LENGTH_LONG).show()
         tumDersBilgileri.clear()
     }
 

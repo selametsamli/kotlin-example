@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bg"
     tools:context="com.selametsamli.ortalamahesapla.MainActivity">
 
     <android.support.constraint.ConstraintLayout
@@ -15,10 +16,14 @@
             android:id="@+id/etDersAd"
             android:layout_width="252dp"
             android:layout_height="39dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:hint="Ders Adı giriniz"
+            android:popupBackground="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -28,8 +33,11 @@
             android:layout_width="115dp"
             android:layout_height="36dp"
             android:layout_marginLeft="16dp"
+            android:backgroundTint="@color/colorAccent"
             android:layout_marginStart="12dp"
+            android:textColor="@android:color/white"
             android:layout_marginTop="16dp"
+            android:popupBackground="@color/colorAccent"
             android:entries="@array/krediler"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="@+id/etDersAd"
@@ -38,6 +46,10 @@
         <Spinner
             android:id="@+id/spnDersNotu"
             android:layout_width="115dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorAccent"
+            android:popupBackground="@color/colorAccent"
+            android:textColor="@android:color/white"
             android:layout_height="39dp"
             android:layout_marginBottom="8dp"
             android:layout_marginStart="4dp"
@@ -50,13 +62,13 @@
 
         <Button
             android:id="@+id/btnDersEkle"
-            android:layout_width="89dp"
-            android:layout_height="74dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
-            android:text="EKLE"
+            android:background="@drawable/btnadd"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintStart_toEndOf="@+id/etDersAd"
@@ -80,11 +92,12 @@
     </ScrollView>
 
     <Button
+        android:background="@drawable/hesapla_btn"
         android:id="@+id/btnHesapla"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="ortalamaHesapla"
-        android:text="HESAPLA" />
+         />
     
 </LinearLayout>
