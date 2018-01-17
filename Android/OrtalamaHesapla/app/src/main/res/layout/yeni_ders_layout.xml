@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/etYeniDersAd"
+            android:layout_width="252dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="AutoCompleteTextView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnYeniDersSil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spnYeniDersKredi"
+            android:layout_width="115dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:entries="@array/krediler"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/etYeniDersAd"
+            app:layout_constraintTop_toBottomOf="@+id/etYeniDersAd" />
+
+        <Spinner
+            android:id="@+id/spnYeniDersNotu"
+            android:layout_width="115dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="4dp"
+            android:entries="@array/tumNotlar"
+            app:layout_constraintBottom_toBottomOf="@+id/spnYeniDersKredi"
+            app:layout_constraintStart_toEndOf="@+id/spnYeniDersKredi"
+            app:layout_constraintTop_toTopOf="@+id/spnYeniDersKredi"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/btnYeniDersSil"
+        android:layout_width="89dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="SİL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etYeniDersAd"
+        app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
