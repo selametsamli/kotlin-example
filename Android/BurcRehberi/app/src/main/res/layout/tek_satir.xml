@@ -43,4 +43,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgBurcSembol"
         app:layout_constraintTop_toBottomOf="@+id/tvBurcAdi" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#2fbbb0"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBurcSembol"
+      />
+
+
+
 </android.support.constraint.ConstraintLayout>
